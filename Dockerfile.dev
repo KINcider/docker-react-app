@@ -6,8 +6,6 @@ COPY package.json ./
 
 RUN npm install
 
-COPY ./ ./
+COPY . .
 
 CMD ["npm", "run", "start"]
-
-ENV CHOKIDAR_USEPOLLING=true
